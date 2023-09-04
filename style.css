@@ -27,12 +27,23 @@ html, body {
 }
 
 header{
-    display: flex;
-    height: 10vh;
-    align-content: center;
-    justify-content: flex-end;
+    
 }
 
+.headerContent{
+    width: auto;
+    justify-content: space-between;
+    height: 10vh;
+
+}
+
+.headerSpace{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
 nav{
     width: 200px;
     display: flex;
