@@ -23,28 +23,28 @@ html, body {
 
 
 @media screen and (max-width: 720px){
-    body{
+    main, aside{
         padding-left: 10vw;
         padding-right: 10vw;
     } 
 }
 
 @media screen and (min-width: 720px) {
-    body{
+    main, aside{
       padding-left: 15vw;
       padding-right: 15vw;
     }
 }
 
 @media screen and (min-width: 900px) {
-  body{
+  main, aside{
     padding-left: 20vw;
     padding-right: 20vw;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  body{
+  main, aside{
     padding-left: 30vw;
     padding-right: 30vw;
   }
@@ -53,6 +53,20 @@ html, body {
 h1, h2{
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.headerContent{
+  height: 10vh;
+}
+.headerSpace{
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerSpace > div{
+  justify-content: center;
 }
 
 nav > a{
@@ -65,25 +79,93 @@ nav > a:hover{
   color: var(--cor2);
 }
 
-
-.headerContent{
-    width: auto;
-    justify-content: space-between;
-    height: 10vh;
-
-}
-
-.headerSpace{
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
 nav{
     width: 200px;
     display: flex;
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
+}
+
+#divIMG{
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  margin: 15px 0 15px 25px;
+}
+
+hr{
+  margin: 20px 0 20px 0;
+}
+
+.container-caixas{  
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.aside-box{
+  background-color: #f3f3f3;
+  height: 25vh;
+}
+
+.content-caixas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 150px;
+  background-color: white;
+  box-shadow: 1px, 1px, 1px, black;
+  font-size: small;
+}
+
+.img-container-a{
+  background-color: #27BFE6;
+  width: 150px;
+}
+
+.img-container-b{
+  background-color: #FBC412;
+  width: 150px;
+
+}
+
+.img-container-c{
+  background-color: #A31C44;
+  width: 150px;
+}
+
+.content-caixas a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin: 0 0 0 10px;
+}
+
+.content-caixas p {
+  margin-top: 10px;
+}
+
+footer{
+  display: flex;
+  height: 8vh;
+  background-color: #353535;
+  color: white;
+  text-align: center;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer a:hover{
+  color: #ccc;
 }
