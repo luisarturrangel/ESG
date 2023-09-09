@@ -108,7 +108,7 @@ hr{
 
 .aside-box{
   background-color: #f3f3f3;
-  height: 25vh;
+  height: 30vh;
 }
 
 .content-caixas{
@@ -118,9 +118,30 @@ hr{
   height: 200px;
   width: 150px;
   background-color: white;
-  box-shadow: 1px, 1px, 1px, black;
+  box-shadow: 5px 5px 10px #0000007a;
   font-size: small;
+  position: relative;
 }
+
+.container-caixas a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none; /* No underlines on the link */
+  z-index: 10; /* Places the link above everything else in the div */
+  background-color: #FFF; /* Fix to make div clickable in IE */
+  opacity: 0; /* Fix to make div clickable in IE */
+  filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+.container-caixas a:hover{
+  background-color: var(--cor2);
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
 
 .img-container-a{
   background-color: #27BFE6;
@@ -138,15 +159,16 @@ hr{
   width: 150px;
 }
 
-.content-caixas a{
+.content-caixas p{
   text-decoration: none;
   color: black;
   font-weight: bold;
   margin: 0 0 0 10px;
+  margin-top: 10px;
 }
 
-.content-caixas p {
-  margin-top: 10px;
+.bottom-text{
+  padding: 15px 0 15px 0;
 }
 
 footer{
@@ -154,6 +176,7 @@ footer{
   height: 8vh;
   background-color: #353535;
   color: white;
+  font-size: small;
   text-align: center;
   align-content: flex-start;
   justify-content: center;
